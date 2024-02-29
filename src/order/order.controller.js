@@ -1,6 +1,7 @@
 const orderService = require('./order.service');
 
 class orderController {
+    // Get all orders
     async getAllOrders(req, res) {
         try {
             const orders = await orderService.getAllOrders();
@@ -17,6 +18,8 @@ class orderController {
         }
     }
 
+    // Get an order by ID
+    
     async getOrderById(req, res) {
         try {
             const order = await orderService.getOrderById(req.params.id);

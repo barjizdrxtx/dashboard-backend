@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 
+// Define the schema for the order
 const orderSchema = new mongoose.Schema({
 
   quantity: {
